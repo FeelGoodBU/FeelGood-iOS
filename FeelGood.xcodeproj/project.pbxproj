@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5614FAE118C05534003D2BC1 /* OurStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614FAE018C05534003D2BC1 /* OurStoryViewController.m */; };
+		569DD59218BDA1A600535C1D /* BackgroundFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */; };
+		569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59318BDA4A400535C1D /* CheeseFeelGood.png */; };
+		569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */; };
+		569DD59818BDA59900535C1D /* heartFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59718BDA59900535C1D /* heartFeelGood.png */; };
+		569DD59A18BDA5A900535C1D /* SandwichFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59918BDA5A900535C1D /* SandwichFeelGood.png */; };
+		569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */; };
 		C99B90CC18B6DF30003B9665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CB18B6DF30003B9665 /* Foundation.framework */; };
 		C99B90CE18B6DF30003B9665 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */; };
 		C99B90D018B6DF30003B9665 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CF18B6DF30003B9665 /* UIKit.framework */; };
@@ -36,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5614FADF18C05534003D2BC1 /* OurStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurStoryViewController.h; sourceTree = "<group>"; };
+		5614FAE018C05534003D2BC1 /* OurStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurStoryViewController.m; sourceTree = "<group>"; };
+		569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundFeelGood.png; path = ../../../BackgroundFeelGood.png; sourceTree = "<group>"; };
+		569DD59318BDA4A400535C1D /* CheeseFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheeseFeelGood.png; path = ../../../../Pictures/CheeseFeelGood.png; sourceTree = "<group>"; };
+		569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CasseroleFeelGood.png; path = ../../../../Pictures/CasseroleFeelGood.png; sourceTree = "<group>"; };
+		569DD59718BDA59900535C1D /* heartFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartFeelGood.png; sourceTree = "<group>"; };
+		569DD59918BDA5A900535C1D /* SandwichFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SandwichFeelGood.png; sourceTree = "<group>"; };
+		569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAckgroundGreenFeelGood.png; sourceTree = "<group>"; };
 		C99B90C818B6DF30003B9665 /* FeelGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99B90CB18B6DF30003B9665 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +137,8 @@
 				C99B90DD18B6DF30003B9665 /* Main_iPhone.storyboard */,
 				C99B910318B6E67F003B9665 /* CreateYourOwnViewController.h */,
 				C99B910418B6E67F003B9665 /* CreateYourOwnViewController.m */,
+				5614FADF18C05534003D2BC1 /* OurStoryViewController.h */,
+				5614FAE018C05534003D2BC1 /* OurStoryViewController.m */,
 				C99B90E018B6DF30003B9665 /* Main_iPad.storyboard */,
 				C99B90E318B6DF30003B9665 /* FeelGoodViewController.h */,
 				C99B90E418B6DF30003B9665 /* FeelGoodViewController.m */,
@@ -134,6 +151,12 @@
 		C99B90D218B6DF30003B9665 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */,
+				569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */,
+				569DD59918BDA5A900535C1D /* SandwichFeelGood.png */,
+				569DD59718BDA59900535C1D /* heartFeelGood.png */,
+				569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */,
+				569DD59318BDA4A400535C1D /* CheeseFeelGood.png */,
 				C99B90D318B6DF30003B9665 /* FeelGood-Info.plist */,
 				C99B90D418B6DF30003B9665 /* InfoPlist.strings */,
 				C99B90D718B6DF30003B9665 /* main.m */,
@@ -237,10 +260,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */,
 				C99B90E218B6DF30003B9665 /* Main_iPad.storyboard in Resources */,
+				569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */,
+				569DD59A18BDA5A900535C1D /* SandwichFeelGood.png in Resources */,
 				C99B90E718B6DF30003B9665 /* Images.xcassets in Resources */,
 				C99B90DF18B6DF30003B9665 /* Main_iPhone.storyboard in Resources */,
+				569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */,
+				569DD59818BDA59900535C1D /* heartFeelGood.png in Resources */,
 				C99B90D618B6DF30003B9665 /* InfoPlist.strings in Resources */,
+				569DD59218BDA1A600535C1D /* BackgroundFeelGood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +291,7 @@
 				C99B90D818B6DF30003B9665 /* main.m in Sources */,
 				C99B90E518B6DF30003B9665 /* FeelGoodViewController.m in Sources */,
 				C99B910518B6E67F003B9665 /* CreateYourOwnViewController.m in Sources */,
+				5614FAE118C05534003D2BC1 /* OurStoryViewController.m in Sources */,
 				C99B90DC18B6DF30003B9665 /* FeelGoodAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +511,7 @@
 				C99B90FF18B6DF30003B9665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C99B910018B6DF30003B9665 /* Build configuration list for PBXNativeTarget "FeelGoodTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +520,7 @@
 				C99B910218B6DF30003B9665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
