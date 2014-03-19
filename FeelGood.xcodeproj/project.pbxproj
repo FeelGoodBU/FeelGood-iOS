@@ -47,9 +47,9 @@
 		5611B6DA18D91D4700F21B5A /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundFeelGood.png; sourceTree = "<group>"; };
 		5614FADF18C05534003D2BC1 /* OurStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurStoryViewController.h; sourceTree = "<group>"; };
 		5614FAE018C05534003D2BC1 /* OurStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurStoryViewController.m; sourceTree = "<group>"; };
-		569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundFeelGood.png; path = ../../../BackgroundFeelGood.png; sourceTree = "<group>"; };
-		569DD59318BDA4A400535C1D /* CheeseFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheeseFeelGood.png; path = ../../../../Pictures/CheeseFeelGood.png; sourceTree = "<group>"; };
-		569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CasseroleFeelGood.png; path = ../../../../Pictures/CasseroleFeelGood.png; sourceTree = "<group>"; };
+		569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundFeelGood.png; sourceTree = "<group>"; };
+		569DD59318BDA4A400535C1D /* CheeseFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseFeelGood.png; sourceTree = "<group>"; };
+		569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CasseroleFeelGood.png; sourceTree = "<group>"; };
 		569DD59718BDA59900535C1D /* heartFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartFeelGood.png; sourceTree = "<group>"; };
 		569DD59918BDA5A900535C1D /* SandwichFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SandwichFeelGood.png; sourceTree = "<group>"; };
 		569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAckgroundGreenFeelGood.png; sourceTree = "<group>"; };
