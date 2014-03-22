@@ -244,19 +244,68 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-1x-wXM">
-                                <rect key="frame" x="20" y="31" width="279" height="29"/>
+                                <rect key="frame" x="20" y="31" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Bread"/>
                                     <segment title="Cheese"/>
                                     <segment title="Veggies"/>
                                     <segment title="Toppings"/>
+                                    <segment title="Others"/>
                                 </segments>
+                                <color key="tintColor" red="0.72381218112244894" green="0.72298654093100267" blue="0.0014970278303669939" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentbutton:" destination="miF-wk-ymk" eventType="valueChanged" id="upJ-03-jKZ"/>
+                                </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="platefeelgood.png" translatesAutoresizingMaskIntoConstraints="NO" id="OKU-SI-9LG">
+                                <rect key="frame" x="78" y="345" width="164" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBp-V7-Zgj">
+                                <rect key="frame" x="54" y="405" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save to My FeelGood">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="63X-Jh-oNq">
+                                <rect key="frame" x="20" y="72" width="280" height="156"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C2S-Fx-4Cc">
+                                    <size key="itemSize" width="76" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="pf5-eD-6Xy">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="35" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5GD-eI-Ggm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="76" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="miF-wk-ymk" id="993-fd-rh2"/>
+                                    <outlet property="delegate" destination="miF-wk-ymk" id="oHV-PO-Jza"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ASU-Kq-oIn"/>
                     <connections>
+                        <outlet property="collectionView" destination="63X-Jh-oNq" id="voo-fQ-VK2"/>
                         <outlet property="ingredients" destination="P2j-1x-wXM" id="Z5b-bN-Flx"/>
                     </connections>
                 </viewController>
@@ -388,6 +437,7 @@
         <image name="FeelGood Logo" width="110" height="110"/>
         <image name="SandwichFeelGood.png" width="224" height="230"/>
         <image name="heartFeelGood.png" width="160" height="142"/>
+        <image name="platefeelgood.png" width="160" height="66"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

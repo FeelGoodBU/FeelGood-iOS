@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateYourOwnViewController : UIViewController{
+@interface CreateYourOwnViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+{
 
     IBOutlet UISegmentedControl *ingredients;
+    
+//Enter all of images labels IBOutlets here
+    
+//    IBOutlet UIImageView *ingredient1;
 }
+- (IBAction)segmentbutton:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end

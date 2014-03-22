@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5611B6DB18D91D4700F21B5A /* BackgroundFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5611B6DA18D91D4700F21B5A /* BackgroundFeelGood.png */; };
 		5614FAE118C05534003D2BC1 /* OurStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614FAE018C05534003D2BC1 /* OurStoryViewController.m */; };
+		561BBD4118DD0CBC009FF095 /* platefeelgood.png in Resources */ = {isa = PBXBuildFile; fileRef = 561BBD4018DD0CBC009FF095 /* platefeelgood.png */; };
+		561BBD4418DD1F7F009FF095 /* wheatbread.png in Resources */ = {isa = PBXBuildFile; fileRef = 561BBD4218DD1F7F009FF095 /* wheatbread.png */; };
+		561BBD4518DD1F7F009FF095 /* whitebread.png in Resources */ = {isa = PBXBuildFile; fileRef = 561BBD4318DD1F7F009FF095 /* whitebread.png */; };
 		569DD59218BDA1A600535C1D /* BackgroundFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */; };
 		569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59318BDA4A400535C1D /* CheeseFeelGood.png */; };
 		569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */; };
@@ -47,6 +50,9 @@
 		5611B6DA18D91D4700F21B5A /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundFeelGood.png; sourceTree = "<group>"; };
 		5614FADF18C05534003D2BC1 /* OurStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurStoryViewController.h; sourceTree = "<group>"; };
 		5614FAE018C05534003D2BC1 /* OurStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurStoryViewController.m; sourceTree = "<group>"; };
+		561BBD4018DD0CBC009FF095 /* platefeelgood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platefeelgood.png; sourceTree = "<group>"; };
+		561BBD4218DD1F7F009FF095 /* wheatbread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheatbread.png; sourceTree = "<group>"; };
+		561BBD4318DD1F7F009FF095 /* whitebread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebread.png; sourceTree = "<group>"; };
 		569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundFeelGood.png; sourceTree = "<group>"; };
 		569DD59318BDA4A400535C1D /* CheeseFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseFeelGood.png; sourceTree = "<group>"; };
 		569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CasseroleFeelGood.png; sourceTree = "<group>"; };
@@ -153,8 +159,11 @@
 		C99B90D218B6DF30003B9665 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				561BBD4218DD1F7F009FF095 /* wheatbread.png */,
+				561BBD4318DD1F7F009FF095 /* whitebread.png */,
 				569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */,
 				569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */,
+				561BBD4018DD0CBC009FF095 /* platefeelgood.png */,
 				5611B6DA18D91D4700F21B5A /* BackgroundFeelGood.png */,
 				569DD59918BDA5A900535C1D /* SandwichFeelGood.png */,
 				569DD59718BDA59900535C1D /* heartFeelGood.png */,
@@ -265,11 +274,14 @@
 			files = (
 				569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */,
 				C99B90E218B6DF30003B9665 /* Main_iPad.storyboard in Resources */,
+				561BBD4518DD1F7F009FF095 /* whitebread.png in Resources */,
 				5611B6DB18D91D4700F21B5A /* BackgroundFeelGood.png in Resources */,
 				569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */,
+				561BBD4418DD1F7F009FF095 /* wheatbread.png in Resources */,
 				569DD59A18BDA5A900535C1D /* SandwichFeelGood.png in Resources */,
 				C99B90E718B6DF30003B9665 /* Images.xcassets in Resources */,
 				C99B90DF18B6DF30003B9665 /* Main_iPhone.storyboard in Resources */,
+				561BBD4118DD0CBC009FF095 /* platefeelgood.png in Resources */,
 				569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */,
 				569DD59818BDA59900535C1D /* heartFeelGood.png in Resources */,
 				C99B90D618B6DF30003B9665 /* InfoPlist.strings in Resources */,
