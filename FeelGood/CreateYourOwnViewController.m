@@ -35,29 +35,55 @@
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
-    self.array = [[NSMutableArray alloc]initWithCapacity:5];
+    self.array = [[NSMutableArray alloc]initWithCapacity:6];
     //Indexzero
     NSMutableArray * array0 = [NSMutableArray new];
     //this array is for the bread
-    [array0 addObject:@"whitebread.png"];
-    [array0 addObject:@"wheatbread.png"];
+    [array0 addObject:@"whitebread"];
+    [array0 addObject:@"wheatbread"];
     
     NSMutableArray * array1 = [NSMutableArray new];
     //this array is for the cheese
-    [array1 addObject:@"SandwichFeelGood.png"];
+    [array1 addObject:@"cheddar cheese"];
+    [array1 addObject:@"jack cheese"];
+    [array1 addObject:@"mozzarella"];
     
     NSMutableArray * array2 = [NSMutableArray new];
     //this array is for the veggies
+    [array2 addObject:@"tomato"];
+    [array2 addObject:@"mushrooms"];
+    [array2 addObject:@"jalapenosfix"];
+    [array2 addObject:@"peppers and onions"];
+    [array2 addObject:@"basil"];
+    [array2 addObject:@"black beans"];
+    
     NSMutableArray * array3 = [NSMutableArray new];
-    //this array is for the toppings
+    //this array is for the sauces
+    [array3 addObject:@"balsamic"];
+    [array3 addObject:@"marinara"];
+    [array3 addObject:@"salsa"];
+    
     NSMutableArray * array4 = [NSMutableArray new];
-    //this array is for the Others
+    //this array is for the seasoning
+    [array4 addObject:@"salt&pepper"];
+    [array4 addObject:@"cinnamon"];
+    [array4 addObject:@"oregano"];
+    
+    NSMutableArray * array5 = [NSMutableArray new];
+    //this array is for the other
+    [array5 addObject:@"apple slices"];
+    [array5 addObject:@"honey"];
+    [array5 addObject:@"granola"];
+    [array5 addObject:@"tortilla chips"];
+    
     
     [self.array addObject:array0];
     [self.array addObject:array1];
     [self.array addObject:array2];
     [self.array addObject:array3];
     [self.array addObject:array4];
+    [self.array addObject:array5];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +97,22 @@
         //whitebreadimage.image=whitebreadimage;
 //        [ingredient1 setImage:[UIImage imageNamed:@"whitebread.png"]];
     }
-    
+    else if(ingredients.selectedSegmentIndex == 1){
+        
+    }
+    else if(ingredients.selectedSegmentIndex == 2){
+        
+    }
+    else if(ingredients.selectedSegmentIndex == 3){
+        
+    }
+    else if(ingredients.selectedSegmentIndex == 4){
+        
+    }
+    else if(ingredients.selectedSegmentIndex == 5){
+        
+    }
+
     self.tabNumber = ingredients.selectedSegmentIndex;
     [self.collectionView reloadData];
    
