@@ -16,10 +16,15 @@
 //Enter all of images labels IBOutlets here
     
 //    IBOutlet UIImageView *ingredient1;
+    
 }
 - (IBAction)segmentbutton:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
+
+@property (strong, nonatomic) IBOutlet UIImageView *breadsandwich;
+
+@property(strong,nonatomic) NSMutableArray *selectedingredient;
 
 @end

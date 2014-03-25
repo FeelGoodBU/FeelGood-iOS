@@ -17,6 +17,9 @@
 
 @implementation CreateYourOwnViewController
 
+@synthesize selectedingredient;
+@synthesize breadsandwich;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+    self.selectedingredient=[[NSMutableArray alloc] initWithCapacity:20];
     [super viewDidLoad];
     
     self.tabNumber = 0;
@@ -91,28 +95,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+int nametab=0;
 - (IBAction)segmentbutton:(id)sender {
-    if (ingredients.selectedSegmentIndex==0) {
-        //whitebreadimage.image=whitebreadimage;
-//        [ingredient1 setImage:[UIImage imageNamed:@"whitebread.png"]];
-    }
-    else if(ingredients.selectedSegmentIndex == 1){
-        
-    }
-    else if(ingredients.selectedSegmentIndex == 2){
-        
-    }
-    else if(ingredients.selectedSegmentIndex == 3){
-        
-    }
-    else if(ingredients.selectedSegmentIndex == 4){
-        
-    }
-    else if(ingredients.selectedSegmentIndex == 5){
-        
-    }
+    
 
+    if (ingredients.selectedSegmentIndex != 0 && [self.selectedingredient count]==0)
+    {
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Select a bread first! " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        ingredients.selectedSegmentIndex = 0;
+        return;
+    }
+    
+    nametab = ingredients.selectedSegmentIndex;
     self.tabNumber = ingredients.selectedSegmentIndex;
     [self.collectionView reloadData];
    
@@ -142,7 +137,12 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger item = indexPath.item;
-    NSLog(@"%d",item);
+    NSLog(@"%d", indexPath.item);
+    [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
+    NSLog(@"%@",self.selectedingredient);
+    if ( nametab==0)
+    {
+        [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png", indexPath.item]]];
+    }
 }
-
 @end

@@ -15,6 +15,8 @@
 		569DD59818BDA59900535C1D /* heartFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59718BDA59900535C1D /* heartFeelGood.png */; };
 		569DD59A18BDA5A900535C1D /* SandwichFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59918BDA5A900535C1D /* SandwichFeelGood.png */; };
 		569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */; };
+		56A31AF518E1066600B2B5E0 /* bread-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A31AF318E1066600B2B5E0 /* bread-0.png */; };
+		56A31AF618E1066600B2B5E0 /* bread-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A31AF418E1066600B2B5E0 /* bread-1.png */; };
 		C99B90CC18B6DF30003B9665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CB18B6DF30003B9665 /* Foundation.framework */; };
 		C99B90CE18B6DF30003B9665 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */; };
 		C99B90D018B6DF30003B9665 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CF18B6DF30003B9665 /* UIKit.framework */; };
@@ -53,6 +55,8 @@
 		569DD59718BDA59900535C1D /* heartFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartFeelGood.png; sourceTree = "<group>"; };
 		569DD59918BDA5A900535C1D /* SandwichFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SandwichFeelGood.png; sourceTree = "<group>"; };
 		569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAckgroundGreenFeelGood.png; sourceTree = "<group>"; };
+		56A31AF318E1066600B2B5E0 /* bread-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bread-0.png"; sourceTree = "<group>"; };
+		56A31AF418E1066600B2B5E0 /* bread-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bread-1.png"; sourceTree = "<group>"; };
 		C99B90C818B6DF30003B9665 /* FeelGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99B90CB18B6DF30003B9665 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,6 +165,8 @@
 				569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */,
 				569DD59318BDA4A400535C1D /* CheeseFeelGood.png */,
 				C99B90D318B6DF30003B9665 /* FeelGood-Info.plist */,
+				56A31AF318E1066600B2B5E0 /* bread-0.png */,
+				56A31AF418E1066600B2B5E0 /* bread-1.png */,
 				C99B90D418B6DF30003B9665 /* InfoPlist.strings */,
 				C99B90D718B6DF30003B9665 /* main.m */,
 				C99B90D918B6DF30003B9665 /* FeelGood-Prefix.pch */,
@@ -263,7 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A31AF618E1066600B2B5E0 /* bread-1.png in Resources */,
 				569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */,
+				56A31AF518E1066600B2B5E0 /* bread-0.png in Resources */,
 				C99B90E218B6DF30003B9665 /* Main_iPad.storyboard in Resources */,
 				5611B6DB18D91D4700F21B5A /* BackgroundFeelGood.png in Resources */,
 				569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */,
