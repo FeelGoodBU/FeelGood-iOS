@@ -20,12 +20,12 @@
 		569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */; };
 		56A31AF518E1066600B2B5E0 /* bread-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A31AF318E1066600B2B5E0 /* bread-0.png */; };
 		56A31AF618E1066600B2B5E0 /* bread-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A31AF418E1066600B2B5E0 /* bread-1.png */; };
-		90B4A34818E24D430003F7FF /* veggie-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34218E24D430003F7FF /* veggie-0.png */; };
-		90B4A34918E24D430003F7FF /* veggie-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34318E24D430003F7FF /* veggie-1.png */; };
-		90B4A34A18E24D430003F7FF /* veggie-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34418E24D430003F7FF /* veggie-2.png */; };
-		90B4A34B18E24D430003F7FF /* veggie-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34518E24D430003F7FF /* veggie-3.png */; };
-		90B4A34C18E24D430003F7FF /* veggie-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34618E24D430003F7FF /* veggie-4.png */; };
-		90B4A34D18E24D430003F7FF /* veggie-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34718E24D430003F7FF /* veggie-5.png */; };
+		90B4A35418E252DE0003F7FF /* veggie-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34E18E252DE0003F7FF /* veggie-0.png */; };
+		90B4A35518E252DE0003F7FF /* veggie-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A34F18E252DE0003F7FF /* veggie-1.png */; };
+		90B4A35618E252DE0003F7FF /* veggie-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A35018E252DE0003F7FF /* veggie-2.png */; };
+		90B4A35718E252DE0003F7FF /* veggie-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A35118E252DE0003F7FF /* veggie-3.png */; };
+		90B4A35818E252DE0003F7FF /* veggie-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A35218E252DE0003F7FF /* veggie-4.png */; };
+		90B4A35918E252DE0003F7FF /* veggie-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B4A35318E252DE0003F7FF /* veggie-5.png */; };
 		C99B90CC18B6DF30003B9665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CB18B6DF30003B9665 /* Foundation.framework */; };
 		C99B90CE18B6DF30003B9665 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */; };
 		C99B90D018B6DF30003B9665 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99B90CF18B6DF30003B9665 /* UIKit.framework */; };
@@ -69,12 +69,12 @@
 		569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BAckgroundGreenFeelGood.png; sourceTree = "<group>"; };
 		56A31AF318E1066600B2B5E0 /* bread-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bread-0.png"; sourceTree = "<group>"; };
 		56A31AF418E1066600B2B5E0 /* bread-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bread-1.png"; sourceTree = "<group>"; };
-		90B4A34218E24D430003F7FF /* veggie-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-0.png"; path = "../../../../Desktop/FeelGood/veggie-0.png"; sourceTree = "<group>"; };
-		90B4A34318E24D430003F7FF /* veggie-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-1.png"; path = "../../../../Desktop/FeelGood/veggie-1.png"; sourceTree = "<group>"; };
-		90B4A34418E24D430003F7FF /* veggie-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-2.png"; path = "../../../../Desktop/FeelGood/veggie-2.png"; sourceTree = "<group>"; };
-		90B4A34518E24D430003F7FF /* veggie-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-3.png"; path = "../../../../Desktop/FeelGood/veggie-3.png"; sourceTree = "<group>"; };
-		90B4A34618E24D430003F7FF /* veggie-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-4.png"; path = "../../../../Desktop/FeelGood/veggie-4.png"; sourceTree = "<group>"; };
-		90B4A34718E24D430003F7FF /* veggie-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "veggie-5.png"; path = "../../../../Desktop/FeelGood/veggie-5.png"; sourceTree = "<group>"; };
+		90B4A34E18E252DE0003F7FF /* veggie-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-0.png"; sourceTree = "<group>"; };
+		90B4A34F18E252DE0003F7FF /* veggie-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-1.png"; sourceTree = "<group>"; };
+		90B4A35018E252DE0003F7FF /* veggie-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-2.png"; sourceTree = "<group>"; };
+		90B4A35118E252DE0003F7FF /* veggie-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-3.png"; sourceTree = "<group>"; };
+		90B4A35218E252DE0003F7FF /* veggie-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-4.png"; sourceTree = "<group>"; };
+		90B4A35318E252DE0003F7FF /* veggie-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "veggie-5.png"; sourceTree = "<group>"; };
 		C99B90C818B6DF30003B9665 /* FeelGood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelGood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99B90CB18B6DF30003B9665 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C99B90CD18B6DF30003B9665 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,12 +175,12 @@
 		C99B90D218B6DF30003B9665 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				90B4A34218E24D430003F7FF /* veggie-0.png */,
-				90B4A34318E24D430003F7FF /* veggie-1.png */,
-				90B4A34418E24D430003F7FF /* veggie-2.png */,
-				90B4A34518E24D430003F7FF /* veggie-3.png */,
-				90B4A34618E24D430003F7FF /* veggie-4.png */,
-				90B4A34718E24D430003F7FF /* veggie-5.png */,
+				90B4A34E18E252DE0003F7FF /* veggie-0.png */,
+				90B4A34F18E252DE0003F7FF /* veggie-1.png */,
+				90B4A35018E252DE0003F7FF /* veggie-2.png */,
+				90B4A35118E252DE0003F7FF /* veggie-3.png */,
+				90B4A35218E252DE0003F7FF /* veggie-4.png */,
+				90B4A35318E252DE0003F7FF /* veggie-5.png */,
 				569DD59B18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png */,
 				569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */,
 				5611B6DA18D91D4700F21B5A /* BackgroundFeelGood.png */,
@@ -296,28 +296,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B4A34D18E24D430003F7FF /* veggie-5.png in Resources */,
 				56A31AF618E1066600B2B5E0 /* bread-1.png in Resources */,
 				5628D93118E252C70047D4C0 /* cheese-1.png in Resources */,
 				569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */,
+				90B4A35918E252DE0003F7FF /* veggie-5.png in Resources */,
 				5628D93318E252D20047D4C0 /* cheese-2.png in Resources */,
 				56A31AF518E1066600B2B5E0 /* bread-0.png in Resources */,
 				5628D93018E252C70047D4C0 /* cheese-0.png in Resources */,
-				90B4A34B18E24D430003F7FF /* veggie-3.png in Resources */,
 				C99B90E218B6DF30003B9665 /* Main_iPad.storyboard in Resources */,
 				5611B6DB18D91D4700F21B5A /* BackgroundFeelGood.png in Resources */,
 				569DD59C18BDA7CC00535C1D /* BAckgroundGreenFeelGood.png in Resources */,
 				569DD59A18BDA5A900535C1D /* SandwichFeelGood.png in Resources */,
+				90B4A35518E252DE0003F7FF /* veggie-1.png in Resources */,
 				C99B90E718B6DF30003B9665 /* Images.xcassets in Resources */,
 				C99B90DF18B6DF30003B9665 /* Main_iPhone.storyboard in Resources */,
-				90B4A34918E24D430003F7FF /* veggie-1.png in Resources */,
 				569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */,
-				90B4A34C18E24D430003F7FF /* veggie-4.png in Resources */,
+				90B4A35718E252DE0003F7FF /* veggie-3.png in Resources */,
 				569DD59818BDA59900535C1D /* heartFeelGood.png in Resources */,
 				C99B90D618B6DF30003B9665 /* InfoPlist.strings in Resources */,
-				90B4A34A18E24D430003F7FF /* veggie-2.png in Resources */,
-				90B4A34818E24D430003F7FF /* veggie-0.png in Resources */,
+				90B4A35818E252DE0003F7FF /* veggie-4.png in Resources */,
+				90B4A35618E252DE0003F7FF /* veggie-2.png in Resources */,
 				569DD59218BDA1A600535C1D /* BackgroundFeelGood.png in Resources */,
+				90B4A35418E252DE0003F7FF /* veggie-0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
