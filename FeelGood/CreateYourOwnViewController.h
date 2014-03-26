@@ -27,4 +27,6 @@
 
 @property(strong,nonatomic) NSMutableArray *selectedingredient;
 
+@property (strong, nonatomic) IBOutlet UIImageView *cheesesandwich;
+
 @end

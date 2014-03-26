@@ -302,7 +302,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDs-VT-PMw">
-                                <rect key="frame" x="40" y="335" width="240" height="57"/>
+                                <rect key="frame" x="40" y="335" width="240" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-Gy-RDy">
+                                <rect key="frame" x="36" y="320" width="249" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -311,6 +315,7 @@
                     <navigationItem key="navigationItem" id="ASU-Kq-oIn"/>
                     <connections>
                         <outlet property="breadsandwich" destination="eDs-VT-PMw" id="6aE-li-Dq1"/>
+                        <outlet property="cheesesandwich" destination="H7G-Gy-RDy" id="l2Y-JJ-uya"/>
                         <outlet property="collectionView" destination="63X-Jh-oNq" id="voo-fQ-VK2"/>
                         <outlet property="ingredients" destination="P2j-1x-wXM" id="Z5b-bN-Flx"/>
                     </connections>

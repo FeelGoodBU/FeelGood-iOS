@@ -19,6 +19,7 @@
 
 @synthesize selectedingredient;
 @synthesize breadsandwich;
+@synthesize cheesesandwich;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -143,6 +144,10 @@ int nametab=0;
     if ( nametab==0)
     {
         [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png", indexPath.item]]];
+    }
+    if (nametab==1)
+    {
+        [self.cheesesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
     }
 }
 @end
