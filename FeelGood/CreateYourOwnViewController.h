@@ -29,4 +29,10 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *cheesesandwich;
 
+@property (weak, nonatomic) IBOutlet UIImageView *veggiesandwich;
+
+
+
+
+
 @end

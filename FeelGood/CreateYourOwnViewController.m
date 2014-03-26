@@ -141,13 +141,19 @@ int nametab=0;
     NSLog(@"%d", indexPath.item);
     [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
     NSLog(@"%@",self.selectedingredient);
-    if ( nametab==0)
+    
+    if (nametab==0)
     {
         [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png", indexPath.item]]];
     }
     if (nametab==1)
     {
         [self.cheesesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
+    }
+    
+    if (nametab==2)
+    {
+        [self.veggiesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
     }
 }
 @end
