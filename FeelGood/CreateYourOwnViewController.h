@@ -10,7 +10,7 @@
 
 @interface CreateYourOwnViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 {
-
+    int heightCounter;
     IBOutlet UISegmentedControl *ingredients;
     
 //Enter all of images labels IBOutlets here
@@ -20,10 +20,14 @@
 }
 - (IBAction)segmentbutton:(id)sender;
 
+- (IBAction)undobutton:(id)sender;
+
+
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 
 @property (strong, nonatomic) IBOutlet UIImageView *breadsandwich;
+@property(strong,nonatomic) NSMutableArray *selectedIngredients;
 
 @property(strong,nonatomic) NSMutableArray *selectedingredient;
 

@@ -34,7 +34,7 @@
 {
     self.selectedingredient=[[NSMutableArray alloc] initWithCapacity:20];
     [super viewDidLoad];
-    
+    heightCounter = 1;
     self.tabNumber = 0;
 	// Do any additional setup after loading the view.
     
@@ -114,6 +114,9 @@ int nametab=0;
    
 }
 
+- (IBAction)undobutton:(id)sender {
+}
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     NSArray * array = self.array[self.tabNumber];
@@ -137,6 +140,16 @@ int nametab=0;
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if(heightCounter >= 15){
+        
+        //bring a alert "You cant add anythinh else"
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"You can't add another ingredient " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        ingredients.selectedSegmentIndex = 0;
+        return;
+        
+    }else{
+    
     NSInteger item = indexPath.item;
     NSLog(@"%d", indexPath.item);
     [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
@@ -144,16 +157,45 @@ int nametab=0;
     
     if (nametab==0)
     {
-        [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png", indexPath.item]]];
+        
+        [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png",indexPath.item]]];
+        
     }
     if (nametab==1)
     {
+        if(self.cheesesandwich.image != nil){
+            //add another piece of bread
+            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.cheesesandwich.frame.origin.x, self.cheesesandwich.frame.origin.y - 10*heightCounter, self.cheesesandwich.frame.size.width, self.cheesesandwich.frame.size.height)];
+            
+            [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
+            [self.view addSubview:imgView];
+            heightCounter++;
+            
+        }else{
+            
         [self.cheesesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
+        }
     }
     
     if (nametab==2)
     {
+        if(self.veggiesandwich.image != nil){
+            //add another piece of bread
+            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*heightCounter, self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
+            
+            [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
+            [self.view addSubview:imgView];
+            heightCounter++;
+            
+        }else{
+
         [self.veggiesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
+        [self.veggiesandwich setFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*heightCounter, self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
+        [self.view bringSubviewToFront:self.veggiesandwich];
+        }
+        // add all of the subviews to an NSMuttable array
     }
+    }
+    
 }
 @end
