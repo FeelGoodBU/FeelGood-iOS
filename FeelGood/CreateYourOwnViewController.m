@@ -115,6 +115,13 @@ int nametab=0;
 }
 
 - (IBAction)undobutton:(id)sender {
+    for(UIView *view in self.view.subviews){
+        if(view.tag == (heightCounter)){
+            [view removeFromSuperview];
+            heightCounter = heightCounter-1;
+        }
+    }
+        
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -159,6 +166,7 @@ int nametab=0;
     {
         
         [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png",indexPath.item]]];
+        self.breadsandwich.tag = heightCounter;
         
     }
     if (nametab==1)
@@ -170,6 +178,7 @@ int nametab=0;
             [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
             [self.view addSubview:imgView];
             heightCounter++;
+            imgView.tag = heightCounter;
             
         }else{
             
@@ -186,6 +195,7 @@ int nametab=0;
             [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
             [self.view addSubview:imgView];
             heightCounter++;
+            imgView.tag = heightCounter;
             
         }else{
 

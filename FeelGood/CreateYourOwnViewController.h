@@ -14,7 +14,7 @@
     IBOutlet UISegmentedControl *ingredients;
     
 //Enter all of images labels IBOutlets here
-    
+    int nval;
 //    IBOutlet UIImageView *ingredient1;
     
 }
