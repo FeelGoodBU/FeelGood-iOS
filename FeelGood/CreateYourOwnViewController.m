@@ -116,9 +116,11 @@ int nametab=0;
 
 - (IBAction)undobutton:(id)sender {
     for(UIView *view in self.view.subviews){
-        if(view.tag == (heightCounter)){
+        if((view.tag == (heightCounter)) && [view isKindOfClass:[UIImageView class]] && ([self.selectedingredient count] !=1)){
             [view removeFromSuperview];
             heightCounter = heightCounter-1;
+            
+            [self.selectedingredient removeObjectAtIndex:([self.selectedingredient count]-1)];
         }
     }
         
@@ -147,20 +149,41 @@ int nametab=0;
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (ingredients.selectedSegmentIndex != 0 && [self.selectedingredient count]==0 && (nametab != 0))
+    {
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Select a bread first! " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        //ingredients.selectedSegmentIndex = 0;
+        return;
+    }
+    
     if(heightCounter >= 15){
         
-        //bring a alert "You cant add anythinh else"
+        //bring a alert "You can't add anythinh else"
         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"You can't add another ingredient " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
-        ingredients.selectedSegmentIndex = 0;
+        //ingredients.selectedSegmentIndex = 0;
         return;
         
     }else{
     
     NSInteger item = indexPath.item;
     NSLog(@"%d", indexPath.item);
-    [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
-    NSLog(@"%@",self.selectedingredient);
+        
+        if ([self.selectedingredient count]==1 && nametab == 0){
+            [self.selectedingredient removeObjectAtIndex:0];
+            
+            [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
+            NSLog(@"%@",self.selectedingredient);
+            
+        }
+        
+        else {
+          [self.selectedingredient addObject:[NSString stringWithFormat:@"%i-%i",nametab, indexPath.item ]];
+    NSLog(@"%@",self.selectedingredient);  
+        }
+    
+    
     
     if (nametab==0)
     {
@@ -168,21 +191,49 @@ int nametab=0;
         [self.breadsandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bread-%i.png",indexPath.item]]];
         self.breadsandwich.tag = heightCounter;
         
+
+    
     }
+
+        
     if (nametab==1)
     {
+        int count = 0;
+        
+        for (int i = 0; i< [self.selectedingredient count]; i++){
+            NSString *element  = [self.selectedingredient objectAtIndex:i];
+            if ([element characterAtIndex:0] == '1')
+            {
+                count++;
+            }
+    
+        }
+        if (count >=4){
+            UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"You can't add another cheese " delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+           
+            [self.selectedingredient removeObjectAtIndex:[self.selectedingredient count]-1];
+            return;
+        }
+        
         if(self.cheesesandwich.image != nil){
+            heightCounter++;
             //add another piece of bread
-            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.cheesesandwich.frame.origin.x, self.cheesesandwich.frame.origin.y - 10*heightCounter, self.cheesesandwich.frame.size.width, self.cheesesandwich.frame.size.height)];
+            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.cheesesandwich.frame.origin.x, self.cheesesandwich.frame.origin.y - 10*(heightCounter-2), self.cheesesandwich.frame.size.width, self.cheesesandwich.frame.size.height)];
             
             [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
             [self.view addSubview:imgView];
-            heightCounter++;
             imgView.tag = heightCounter;
             
-        }else{
             
+        }else{
+         
+            heightCounter++;
         [self.cheesesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"cheese-%i.png",indexPath.item]]];
+            NSLog(@"%d", heightCounter);
+            
+            self.cheesesandwich.tag = heightCounter;
+            
         }
     }
     
@@ -190,18 +241,23 @@ int nametab=0;
     {
         if(self.veggiesandwich.image != nil){
             //add another piece of bread
-            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*heightCounter, self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
+            heightCounter++;
+            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*(heightCounter-2), self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
             
             [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
             [self.view addSubview:imgView];
-            heightCounter++;
+            
             imgView.tag = heightCounter;
             
+            
         }else{
-
+            heightCounter++;
         [self.veggiesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"veggie-%i.png",indexPath.item]]];
-        [self.veggiesandwich setFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*heightCounter, self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
+        [self.veggiesandwich setFrame:CGRectMake(self.veggiesandwich.frame.origin.x, self.veggiesandwich.frame.origin.y - 10*(heightCounter-1), self.veggiesandwich.frame.size.width, self.veggiesandwich.frame.size.height)];
         [self.view bringSubviewToFront:self.veggiesandwich];
+            
+        self.veggiesandwich.tag = heightCounter;
+            
         }
         // add all of the subviews to an NSMuttable array
     }
