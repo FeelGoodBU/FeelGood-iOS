@@ -12,6 +12,7 @@
 		5628D93018E252C70047D4C0 /* cheese-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5628D92E18E252C70047D4C0 /* cheese-0.png */; };
 		5628D93118E252C70047D4C0 /* cheese-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5628D92F18E252C70047D4C0 /* cheese-1.png */; };
 		5628D93318E252D20047D4C0 /* cheese-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5628D93218E252D20047D4C0 /* cheese-2.png */; };
+		5669E4351900D34000D1A7B9 /* pesto.png in Resources */ = {isa = PBXBuildFile; fileRef = 5669E4341900D34000D1A7B9 /* pesto.png */; };
 		569DD59218BDA1A600535C1D /* BackgroundFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */; };
 		569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59318BDA4A400535C1D /* CheeseFeelGood.png */; };
 		569DD59618BDA58C00535C1D /* CasseroleFeelGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */; };
@@ -61,6 +62,7 @@
 		5628D92E18E252C70047D4C0 /* cheese-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheese-0.png"; sourceTree = "<group>"; };
 		5628D92F18E252C70047D4C0 /* cheese-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheese-1.png"; sourceTree = "<group>"; };
 		5628D93218E252D20047D4C0 /* cheese-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cheese-2.png"; sourceTree = "<group>"; };
+		5669E4341900D34000D1A7B9 /* pesto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pesto.png; sourceTree = "<group>"; };
 		569DD59118BDA1A600535C1D /* BackgroundFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundFeelGood.png; sourceTree = "<group>"; };
 		569DD59318BDA4A400535C1D /* CheeseFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheeseFeelGood.png; sourceTree = "<group>"; };
 		569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CasseroleFeelGood.png; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				5628D93218E252D20047D4C0 /* cheese-2.png */,
 				569DD59718BDA59900535C1D /* heartFeelGood.png */,
 				569DD59518BDA58C00535C1D /* CasseroleFeelGood.png */,
+				5669E4341900D34000D1A7B9 /* pesto.png */,
 				5628D92E18E252C70047D4C0 /* cheese-0.png */,
 				5628D92F18E252C70047D4C0 /* cheese-1.png */,
 				569DD59318BDA4A400535C1D /* CheeseFeelGood.png */,
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5669E4351900D34000D1A7B9 /* pesto.png in Resources */,
 				56A31AF618E1066600B2B5E0 /* bread-1.png in Resources */,
 				5628D93118E252C70047D4C0 /* cheese-1.png in Resources */,
 				569DD59418BDA4A400535C1D /* CheeseFeelGood.png in Resources */,

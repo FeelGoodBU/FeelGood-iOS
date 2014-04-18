@@ -51,7 +51,7 @@
     //this array is for the cheese
     [array1 addObject:@"cheddar cheese"];
     [array1 addObject:@"jack cheese"];
-    [array1 addObject:@"mozzarella"];
+    [array1 addObject:@"cheese-2"];
     
     NSMutableArray * array2 = [NSMutableArray new];
     //this array is for the veggies
@@ -67,6 +67,7 @@
     [array3 addObject:@"balsamic"];
     [array3 addObject:@"marinara"];
     [array3 addObject:@"salsa"];
+    [array3 addObject:@"pesto.png"];
     
     NSMutableArray * array4 = [NSMutableArray new];
     //this array is for the seasoning
@@ -259,8 +260,11 @@ int nametab=0;
         self.veggiesandwich.tag = heightCounter;
             
         }
-        // add all of the subviews to an NSMuttable array
     }
+        if (nametab==3)
+        {
+            //that part is for all of the sauces
+        }
     }
     
 }
