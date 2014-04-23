@@ -13,6 +13,8 @@
     int heightCounter;
     IBOutlet UISegmentedControl *ingredients;
     
+    IBOutlet UIButton *finishbutton;
+    
 //Enter all of images labels IBOutlets here
     int nval;
 //    IBOutlet UIImageView *ingredient1;
@@ -34,7 +36,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *cheesesandwich;
 
 @property (weak, nonatomic) IBOutlet UIImageView *veggiesandwich;
-
+@property(weak,nonatomic) IBOutlet UIImageView *saucesandwich;
 
 
 

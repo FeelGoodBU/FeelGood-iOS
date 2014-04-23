@@ -20,6 +20,7 @@
 @synthesize selectedingredient;
 @synthesize breadsandwich;
 @synthesize cheesesandwich;
+@synthesize saucesandwich;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,8 +31,14 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
+    finishbutton.layer.borderWidth=.9f;
+    finishbutton.layer.borderColor=[[UIColor blackColor] CGColor];
+    finishbutton.layer.backgroundColor=[[UIColor whiteColor]CGColor];
+    
+    
     self.selectedingredient=[[NSMutableArray alloc] initWithCapacity:20];
     [super viewDidLoad];
     heightCounter = 1;
@@ -68,6 +75,8 @@
     [array3 addObject:@"marinara"];
     [array3 addObject:@"salsa"];
     [array3 addObject:@"pesto.png"];
+    [array3 addObject:@"ranch.png"];
+    [array3 addObject:@"hotsauce.png"];
     
     NSMutableArray * array4 = [NSMutableArray new];
     //this array is for the seasoning
@@ -261,11 +270,35 @@ int nametab=0;
             
         }
     }
+        
         if (nametab==3)
         {
+            if(self.saucesandwich.image != nil){
+                heightCounter++;
+            
+            UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(self.saucesandwich.frame.origin.x, self.saucesandwich.frame.origin.y - 10*(heightCounter-2), self.saucesandwich.frame.size.width, self.saucesandwich.frame.size.height)];
+            
+            [imgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"sauces-%i.png",indexPath.item]]];
+            [self.view addSubview:imgView];
+            
+            imgView.tag = heightCounter;
+            
+            
+        }else{
+            heightCounter++;
+            [self.saucesandwich setImage:[UIImage imageNamed:[NSString stringWithFormat:@"sauces-%i.png",indexPath.item]]];
+            [self.saucesandwich setFrame:CGRectMake(self.saucesandwich.frame.origin.x, self.saucesandwich.frame.origin.y - 10*(heightCounter-1), self.saucesandwich.frame.size.width, self.saucesandwich.frame.size.height)];
+            [self.view bringSubviewToFront:self.saucesandwich];
+            
+            self.saucesandwich.tag = heightCounter;
             //that part is for all of the sauces
         }
+        }
+        if (nametab==4)
+        {
+            
+        }
     }
-    
+
 }
 @end
